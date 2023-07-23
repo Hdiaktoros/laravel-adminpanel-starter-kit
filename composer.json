@@ -75,6 +75,8 @@
             "App\\": "app/"
         }
     },
+
+
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
@@ -107,6 +109,10 @@
         "lclear": "rm -rf bootstrap/cache/*.php  && php artisan view:clear && php artisan config:clear && php artisan route:clear"
     },
     "config": {
+        "platform": {
+            "ext-pcntl": "8.0",
+            "ext-posix": "8.0"
+        },
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
